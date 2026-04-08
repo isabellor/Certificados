@@ -1,3 +1,11 @@
+import certNode from '../../assets/certificates/Node_-_Certificacin.pdf';
+import certReact from '../../assets/certificates/React_JS_-_Certificacin.pdf';
+import certIA from '../../assets/certificates/certificado automatizacion ia.pdf';
+import certFrontEnd from '../../assets/certificates/certificado front end engineer.pdf';
+import certTestAuto from '../../assets/certificates/fundamentos de test automation.pdf';
+import certGit from '../../assets/certificates/git certificado.pdf';
+import certQA from '../../assets/certificates/qa automations engineer.pdf';
+
 // Helper function to get simple devicon URLs
 const getIcon = (name) => {
   const iconMap = {
@@ -34,8 +42,9 @@ export const certificatesData = [
     id: 1,
     title: 'Front-End Engineer Career Path',
     issuer: 'Codecademy',
-    type: 'Cert. & Badge',
+    type: 'Certificado',
     date: '2025',
+    hours: '145 horas',
     description: 'Programa completo de Front End Engineering cubriendo desde los fundamentos de la web hasta frameworks modernos y arquitecturas de aplicaciones.',
     skills: [
       { name: 'HTML', icon: getIcon('html') },
@@ -45,51 +54,43 @@ export const certificatesData = [
       { name: 'Git', icon: getIcon('git') },
       { name: 'GitHub', icon: getIcon('github') }
     ],
-    image: 'https://placehold.co/600x400/e2a694/ffffff?text=Certificado+Placeholder', // Reemplazar con la ruta de tu imagen real en /assets
-    badge: 'https://placehold.co/100x100/4a4543/ffffff?text=Badge', // Reemplazar con el badge real
-    link: '#', // Reemplaza esto con el link a tu certificado (credly, web, pdf, etc)
-    hasImage: true
+    link: certFrontEnd
   },
   {
     id: 2,
-    title: 'Responsive Web Design',
-    issuer: 'freeCodeCamp',
+    title: 'React JS',
+    issuer: 'Talento Tech',
     type: 'Certificado',
-    date: '2024',
-    description: 'Desarrollo de páginas web responsivas y accesibles utilizando las mejores prácticas de semántica y estilización avanzada.',
+    date: '2025',
+    hours: '80 horas',
+    description: 'Construcción avanzada de interfaces interactivas, manejo del estado global, hooks y creación de SPA (Single Page Applications) modernas y escalables.',
     skills: [
-      { name: 'HTML', icon: getIcon('html') },
-      { name: 'CSS', icon: getIcon('css') }
+      { name: 'React', icon: getIcon('react') },
+      { name: 'Vite', icon: getIcon('vite') }
     ],
-    image: 'https://placehold.co/600x400/f5ddd6/4a4543?text=Certificado+FCC',
-    badge: null,
-    link: '#',
-    hasImage: true
+    link: certReact
   },
   {
     id: 3,
-    title: 'React y Node.js',
+    title: 'Node.js',
     issuer: 'Talento Tech',
-    type: 'Badge',
+    type: 'Certificado',
     date: '2025',
-    description: 'Construcción de aplicaciones web Full Stack modernas y escalables.',
+    hours: '80 horas',
+    description: 'Desarrollo backend con JavaScript, creación de APIs RESTful robustas y seguras mediante Express, manejo de rutas, bases de datos y lógica del servidor.',
     skills: [
-      { name: 'React', icon: getIcon('react') },
       { name: 'Node.js', icon: getIcon('node') },
-      { name: 'Express', icon: getIcon('express') },
-      { name: 'Vite', icon: getIcon('vite') }
+      { name: 'Express', icon: getIcon('express') }
     ],
-    image: null,
-    badge: 'https://placehold.co/100x100/e2a694/fff?text=Badge',
-    link: '#',
-    hasImage: false
+    link: certNode
   },
   {
     id: 4,
-    title: 'QA Automation',
+    title: 'QA Automation Engineer',
     issuer: 'Desafío Latam',
-    type: 'Cert. & Badge',
-    date: '2024',
+    type: 'Certificado',
+    date: '2026',
+    hours: '400 horas',
     description: 'Especialización en automatización de pruebas de software, cubriendo herramientas líder en la industria para pruebas E2E, API y móviles.',
     skills: [
       { name: 'Cypress', icon: getIcon('cypress') },
@@ -102,22 +103,57 @@ export const certificatesData = [
       { name: 'GitHub Actions', icon: getIcon('github actions') },
       { name: 'Trello', icon: getIcon('trello') }
     ],
-    image: 'https://placehold.co/600x400/4a4543/ffffff?text=Certificado+QA',
-    badge: 'https://placehold.co/100x100/f5ddd6/4a4543?text=Badge',
-    link: '#',
-    hasImage: true
+    link: certQA
   },
   {
     id: 5,
-    title: 'Inteligencia Artificial',
+    title: 'Transformación Digital con IA y Automatización',
     issuer: 'Desafío Latam',
-    type: 'Badge',
+    type: 'Certificado',
     date: '2025',
+    hours: '150 horas',
     description: 'Fundamentos de la Inteligencia Artificial y su aplicación en la industria tecnológica.',
     skills: [],
-    image: null,
-    badge: 'https://placehold.co/100x100/fdf5f3/4a4543?text=Badge',
-    link: '#',
-    hasImage: false
+    link: certIA
+  },
+  {
+    id: 6,
+    title: 'Fundamentos de Test Automation',
+    issuer: 'Desafío Latam',
+    type: 'Certificado',
+    date: '2026',
+    hours: '58 horas',
+    description: 'Introducción y bases del testing automatizado de software.',
+    skills: [
+      { name: 'Cypress', icon: getIcon('cypress') },
+      { name: 'Postman', icon: getIcon('postman') }
+    ],
+    link: certTestAuto
+  },
+  {
+    id: 7,
+    title: 'Git y GitHub',
+    issuer: 'Codecademy',
+    type: 'Certificado',
+    date: '2025',
+    description: 'Control de versiones, trabajo colaborativo y manejo de repositorios de código.',
+    skills: [
+      { name: 'Git', icon: getIcon('git') },
+      { name: 'GitHub', icon: getIcon('github') }
+    ],
+    link: certGit
+  },
+  {
+    id: 8,
+    title: 'QA Manual',
+    issuer: 'Talento Tech',
+    type: 'En progreso',
+    date: 'Julio 2026',
+    hours: 'En curso',
+    description: 'Bases teóricas y prácticas del aseguramiento de calidad, creación de casos de prueba, reporte de bugs y metodologías ágiles.',
+    skills: [
+      { name: 'Trello', icon: getIcon('trello') }
+    ],
+    link: null
   }
 ];

@@ -2,37 +2,17 @@ import React from 'react';
 import './CertificatesCard.css';
 
 const CertificatesCard = ({ cert }) => {
-  const isBadgeOnly = cert.type.toLowerCase() === 'badge';
+  return (
+    <div className="cert-card">
+      
 
-  const CardContent = (
-    <>
-      {/* Contenedor de la Imagen principal del certificado o del badge */}
-      {(cert.image || cert.badge) && (
-        <div className="cert-image-container">
-          {cert.image ? (
-             <img src={cert.image} alt={`Certificado visual de ${cert.title}`} className="cert-image" />
-          ) : (
-             <img src={cert.badge} alt={`Badge de ${cert.title}`} className="cert-badge-image" />
-          )}
-
-          {/* Si tiene ambos, el badge se superpone en la esquina derecha de la imagen principal */}
-          {cert.image && cert.badge && (
-            <div className="cert-badge-overlay">
-               <img src={cert.badge} alt="Badge" className="cert-badge-image" />
-            </div>
-          )}
-        </div>
-      )}
 
       <div className="cert-content-wrapper">
-        <div className={`cert-type-pill ${isBadgeOnly ? 'cert-type-badge' : ''}`}>
-          {cert.type}
-        </div>
-        
         <div className="cert-header">
           <h3 className="cert-title">{cert.title}</h3>
           <p className="cert-issuer">
             En <strong>{cert.issuer}</strong> • {cert.date}
+            {cert.hours && <span className="cert-hours"> • {cert.hours}</span>}
           </p>
         </div>
 
@@ -51,23 +31,17 @@ const CertificatesCard = ({ cert }) => {
             </div>
           </div>
         )}
+
+        {/* Botón Ver Certificado */}
+        {cert.link && (
+          <div className="cert-action">
+            <a href={cert.link} target="_blank" rel="noopener noreferrer" className="cert-button">
+              Ver Certificado
+            </a>
+          </div>
+        )}
+
       </div>
-    </>
-  );
-
-  // Si hay un enlace, renderizamos un <a>
-  if (cert.link) {
-    return (
-      <a href={cert.link} target="_blank" rel="noopener noreferrer" className="cert-card">
-        {CardContent}
-      </a>
-    );
-  }
-
-  // De otra forma un div normal
-  return (
-    <div className="cert-card">
-      {CardContent}
     </div>
   );
 };

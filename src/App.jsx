@@ -11,17 +11,18 @@ function App() {
       <div className="decor-circle decor-2"></div>
 
       <header className="hero-section">
-        <span className="hero-greeting">¡Hola! Soy</span>
-        <h1 className="hero-name">Isabel Lorite</h1>
-        <h2 className="hero-title">Frontend Developer & QA Tester (In Progress)</h2>
+        <div className="typewriter-container">
+          <h1 className="hero-name">Hola, soy <span className="accent-name">Isabel Lorite</span>.</h1>
+        </div>
+        <h2 className="hero-title">Frontend Developer & QA Tester (In Training)</h2>
         <p className="hero-description">
-          Bienvenido a mi espacio. Aquí documento mi recorrido de aprendizaje y las habilidades 
-          técnicas que he ido construyendo paso a paso.
+          Bienvenido. En esta página documento los certificados y competencias prácticas que voy
+          obteniendo durante mi formación en IT.
         </p>
       </header>
 
       <main className="container">
-        <h2 className="section-title">Certificaciones & Badges</h2>
+        <h2 className="section-title">Certificados</h2>
         <CertificatesList certificates={certificatesData} />
       </main>
     </div>
