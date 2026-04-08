@@ -3,7 +3,7 @@
   border-radius: 20px;
   box-shadow: var(--card-shadow);
   border: var(--card-border);
-  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+  transition: translate 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
   overflow: hidden;
   height: 100%;
   display: flex;
@@ -16,9 +16,9 @@
 }
 
 .cert-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px -10px rgba(79, 70, 229, 0.15);
-  border-color: rgba(79, 70, 229, 0.1);
+  translate: 8px -6px; /* Desplaza usando la propiedad independiente translate para no chocar con animation */
+  box-shadow: -10px 10px 0px 0px var(--text-primary); /* Sombreado sólido brutalista */
+  border-color: var(--text-primary); /* Borde contrastante */
 }
 
 .cert-content-wrapper {
