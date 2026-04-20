@@ -28,8 +28,7 @@ function App() {
           </div>
           <h2 className="hero-title">Frontend Developer & QA Tester (In Training)</h2>
           <p className="hero-description">
-            Bienvenido. En esta página documento los certificados y competencias prácticas que voy
-            obteniendo durante mi formación en IT.
+            ¡Hola! En este espacio comparto las certificaciones y badges que validan mis habilidades como desarrolladora. Cada credencial representa proyectos prácticos, horas de código y un compromiso constante con el aprendizaje tecnológico.
           </p>
         </div>
 
