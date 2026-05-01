@@ -1,6 +1,6 @@
 import certNode from '../../assets/certificates/2026-01-26_desarrollo-backend-con-node-js-talento-tech-es.pdf';
 import certReact from '../../assets/certificates/2025-08-25_react-js-talento-tech-es.pdf';
-import certIA from '../../assets/certificates/2025-09-16_introduccion-a-la-inteligencia-artificial-es.pdf';
+import certIA from '../../assets/certificates/certificado automatizacion ia.pdf';
 import certFrontEnd from '../../assets/certificates/certificado front end engineer.pdf';
 import certTestAuto from '../../assets/certificates/fundamentos de test automation.pdf';
 import certGit from '../../assets/certificates/git certificado.pdf';
